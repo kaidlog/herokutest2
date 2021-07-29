@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-&x5h2xx&krdwbj5^&i2h$kq7it^@@e$0y%^+y^)_d2#p3hiy+-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['127.0.0.1','scalahub99testf.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
@@ -45,13 +45,13 @@ INSTALLED_APPS = [
     'order',
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:8080",
-    "http://127.0.0.1:8080",
-    "https://scalahub99testf.herokuapp.com",
-]
+##CORS_ALLOWED_ORIGINS = [
+##    "http://localhost:8080",
+##    "http://127.0.0.1:8080",
+##    "https://scalahub99testf.herokuapp.com",
+##]
 
-
+CORS_ORIGIN_ALLOW_ALL = False
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -122,7 +122,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Taipei'
 
 USE_I18N = True
 
