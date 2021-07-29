@@ -25,7 +25,6 @@ SECRET_KEY = 'django-insecure-&x5h2xx&krdwbj5^&i2h$kq7it^@@e$0y%^+y^)_d2#p3hiy+-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['34.89.118.220']
 ALLOWED_HOSTS = ['*']
 # Application definition
 
@@ -49,6 +48,7 @@ INSTALLED_APPS = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",
     "http://127.0.0.1:8080",
+    "https://scalahub99testf.herokuapp.com",
 ]
 
 
